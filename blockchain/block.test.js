@@ -4,9 +4,9 @@ describe('Block', () => {
 	let data, lastBlock, block;
 
 	beforeEach(() => {
-		data = 'any value';
+		data 	    = 'any value';
 		lastBlock = Block.genesis();
-		block = Block.mineBlock(lastBlock, data);
+		block     = Block.mineBlock(lastBlock, data);
 	});
 
 	it('sets the `data` to match the input', () => {
